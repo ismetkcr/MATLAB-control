@@ -1,0 +1,580 @@
+Library {
+  Name			  "SuperLogic"
+  Version		  7.0
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5350_P100-1998"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Feb 09 15:28:45 2006"
+  Creator		  "ugur"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "xx"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Jun 21 13:36:44 2021"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:11>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "SuperLogic"
+    Location		    [702, 170, 876, 884]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.196850, 0.196850, 0.196850, 0.196850]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      "S-Function"
+      Name		      "8018 Analog Input"
+      Ports		      [1, 1]
+      Position		      [55, 110, 105, 200]
+      ForegroundColor	      "blue"
+      FunctionName	      "Analog_Input"
+      Parameters	      "AC1, AC2, AC3, AC4, AC5, AC6, AC7, AC8"
+      MaskType		      "S function: Analog Input"
+      MaskDescription	      "This M-file reads the analog input channels from the SL 8018 with 8520\nThe first input is the Com_port number from Serial Port Block."
+      MaskPromptString	      "Analog Channel 1|Analog Channel 2|Analog Channel 3|Analog Channel 4|Analog Channel 5|Analog Channel 6|Analog Channel 7|Analog Channel 8"
+      MaskStyleString	      "checkbox,checkbox,checkbox,checkbox,checkbox,checkbox,checkbox,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off"
+      MaskCallbackString      "|||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,"
+      MaskVariables	      "AC1=@1;AC2=@2;AC3=@3;AC4=@4;AC5=@5;AC6=@6;AC7=@7;AC8=@8;"
+      MaskDisplay	      "image(imread('8018.jpg'))"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|off|off|off|off|off|off|off"
+      MaskTabNameString	      ",,,,,,,"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "8018 Temperature Input"
+      Ports		      [1, 1]
+      Position		      [55, 235, 105, 325]
+      ForegroundColor	      "blue"
+      FunctionName	      "Temp_Input"
+      Parameters	      "TC1, TC2, TC3, TC4, TC5, TC6, TC7, TC8"
+      MaskType		      "S function: Temperature Input"
+      MaskDescription	      "This M-file reads the temperature input channels from the SL 8018 with 8520\nThe first input is the Com_port number from Serial Port Block."
+      MaskPromptString	      "Temperature Channel 1|Temperature Channel 2|Temperature Channel 3|Temperature Channel 4|Temperature Channel 5|Temperature Channel 6|Temperature Channel 7|Temperature Channel 8"
+      MaskStyleString	      "checkbox,checkbox,checkbox,checkbox,checkbox,checkbox,checkbox,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off"
+      MaskCallbackString      "|||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,"
+      MaskVariables	      "TC1=@1;TC2=@2;TC3=@3;TC4=@4;TC5=@5;TC6=@6;TC7=@7;TC8=@8;"
+      MaskDisplay	      "image(imread('8018.jpg'))"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|off|off|off|off|off|off|off"
+      MaskTabNameString	      ",,,,,,,"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "8024 4-20mA Output"
+      Ports		      [5]
+      Position		      [55, 486, 105, 574]
+      ForegroundColor	      "blue"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskType		      "S function: Analog Output"
+      MaskDescription	      "This M-file sets the analog output channels from the SL 8024 with 8520\nThe first input is the Com_port number from Serial Port Block."
+      MaskPromptString	      "Output Channel 1|Output Channel 2|Output Channel 3|Output Channel 4"
+      MaskStyleString	      "checkbox,checkbox,checkbox,checkbox"
+      MaskTunableValueString  "off,off,off,off"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVarAliasString      ",,,"
+      MaskVariables	      "OC1=@1;OC2=@2;OC3=@3;OC4=@4;"
+      MaskDisplay	      "image(imread('8018.jpg'))"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|off|off|off"
+      MaskTabNameString	      ",,,"
+      System {
+	Name			"8024 4-20mA Output"
+	Location		[134, 189, 632, 489]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "COM Port"
+	  Position		  [45, 48, 75, 62]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 1"
+	  Position		  [45, 83, 75, 97]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 2"
+	  Position		  [45, 118, 75, 132]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 3"
+	  Position		  [45, 168, 75, 182]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 4"
+	  Position		  [45, 213, 75, 227]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "8024 4-20mA Output"
+	  Ports			  [1]
+	  Position		  [320, 76, 415, 164]
+	  ForegroundColor	  "blue"
+	  FunctionName		  "A4_20mA_Output"
+	  Parameters		  "OC1, OC2, OC3, OC4"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [5, 1]
+	  Position		  [180, 64, 240, 176]
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "signals"
+	}
+	Line {
+	  SrcBlock		  "Output Channel 4"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Output Channel 3"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -35]
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Output Channel 2"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -5]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Output Channel 1"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "COM Port"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 25]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "8024 4-20mA Output"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "8024 Analog Output"
+      Ports		      [5]
+      Position		      [55, 366, 105, 454]
+      ForegroundColor	      "blue"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskType		      "S function: Analog Output"
+      MaskDescription	      "This M-file sets the analog output channels from the SL 8024 with 8520\nThe first input is the Com_port number from Serial Port Block."
+      MaskPromptString	      "Output Channel 1|Output Channel 2|Output Channel 3|Output Channel 4"
+      MaskStyleString	      "checkbox,checkbox,checkbox,checkbox"
+      MaskTunableValueString  "off,off,off,off"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVarAliasString      ",,,"
+      MaskVariables	      "OC1=@1;OC2=@2;OC3=@3;OC4=@4;"
+      MaskDisplay	      "image(imread('8018.jpg'))"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|off|off|off"
+      MaskTabNameString	      ",,,"
+      System {
+	Name			"8024 Analog Output"
+	Location		[134, 189, 632, 489]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "COM Port"
+	  Position		  [45, 48, 75, 62]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 1"
+	  Position		  [45, 83, 75, 97]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 2"
+	  Position		  [45, 118, 75, 132]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 3"
+	  Position		  [45, 168, 75, 182]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Output Channel 4"
+	  Position		  [45, 213, 75, 227]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "8024 Analog Output"
+	  Ports			  [1]
+	  Position		  [320, 76, 415, 164]
+	  ForegroundColor	  "blue"
+	  FunctionName		  "Analog_Output"
+	  Parameters		  "OC1, OC2, OC3, OC4"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [5, 1]
+	  Position		  [180, 64, 240, 176]
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "signals"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "8024 Analog Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "COM Port"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 25]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Output Channel 1"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Output Channel 2"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -5]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Output Channel 3"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -35]
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Output Channel 4"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+      }
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "Serial Port"
+      Ports		      [1, 1]
+      Position		      [45, 14, 120, 76]
+      ForegroundColor	      "blue"
+      BackgroundColor	      "blue"
+      FunctionName	      "Serial_Port"
+      Parameters	      "PORT_NAME, PORT_BRATE"
+      MaskType		      "S function : Comm Port "
+      MaskDescription	      "Opens and initializes the selected COM port with the\nselected parameters at the start of the simulation. At the termination\nof the simulation closes the COM port and destroy the handle.\n\nThe output of the block is the handle to the Com port."
+      MaskPromptString	      "Port|BaudRate"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4),popup(4800|9600|19200|38400|57600|115200)"
+      MaskTunableValueString  "off,off"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "PORT_NAME=&1;PORT_BRATE=&2;"
+      MaskDisplay	      "image(imread('dsub9.jpg'))"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "COM1|19200"
+      MaskTabNameString	      ","
+      Port {
+	PortNumber		1
+	Name			"Com Port Number"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Timer Function"
+      Ports		      [0, 1]
+      Position		      [55, 606, 110, 644]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "RT/Timer Function"
+      SourceType	      "RTBlock"
+      step		      "50"
+      tmrpriority	      "HIGH"
+      ThPriority	      "TIME CRITICAL"
+    }
+  }
+}
